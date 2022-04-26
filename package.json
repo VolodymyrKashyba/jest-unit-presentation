@@ -1,0 +1,61 @@
+{
+  "name": "jest-presentation",
+  "version": "1.0.0",
+  "description": "Jest Presentation for SoftOnix",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint \"{presentation}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:describe:structure": "jest presentation/-1-describe/describe.block.tests.structure.spec.ts",
+    "test:describe:naming": "jest presentation/-1-describe/describe.tests.naming.spec.ts",
+    "test:matchers": "jest presentation/-2-matchers/basic.matchers.spec.ts",
+    "test:spies": "jest presentation/-3-spies-and-cleaners/spy.basics.spec.ts",
+    "test:expects": "jest presentation/-4-expect/expects.spec.ts",
+    "test:common-mistakes": "jest presentation/-5-common-mistakes/common.mistakes.spec.ts",
+    "test:mocks": "jest presentation/-6-mocks/mock.libs.spec.ts",
+    "test:example": "jest presentation/-7-example/how.to.unit.test.example.spec.ts "
+  },
+  "author": "Volodymyr Kashuba",
+  "license":"UNLICENSED",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "jest": "^27.0.6"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^8.0.0",
+    "@nestjs/schematics": "^8.0.0",
+    "@nestjs/testing": "^8.0.0",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "ts-jest": "^27.0.3",
+    "prettier": "^2.3.2",
+    "ts-loader": "^9.2.3",
+    "ts-node": "^10.7.0",
+    "tsconfig-paths": "^3.10.1",
+    "typescript": "^4.3.5"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": ".",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
+
