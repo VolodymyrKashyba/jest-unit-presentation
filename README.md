@@ -1,5 +1,6 @@
 # Jest unit test presentation
-##The project's aim to show basics of jest unit testing
+
+## The project's aim to show basics of jest unit testing
 
 ### Run all tests command 
 * npm run test
